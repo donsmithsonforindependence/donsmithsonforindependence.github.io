@@ -1,37 +1,64 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-</head>
-<body>
-    <h2>Contact Us</h2>
-    <form action="https://formsubmit.co/playlandbluebird@yahoo.com" method="POST" />
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+    <head>
 
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>A Reusable Contact Form In HTML And CSS - reusable form</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+ </script>
+<script language="JavaScript1.1">
+ var browserOK=true;
+</script>
+<script>
+		{im21on=new Image();im21off=new Image();im21on.src="images/invert1.jpg";im21off.src="images/home2.jpg";} 
+		</script>
+    </head>
+    <body >
 
-        <label for="message">Your Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        <div class="container">
+            <div id="form-main">
+                <div id="form-div">
+                    <form class="montform" id="reused_form" >
+						<form action="https://formsubmit.co/playlandbluebird@yahoo.com" method="POST" />
+                        <p class="name">
+                            <input name="name" type="text" class="feedback-input" required placeholder="Name" id="name" />
+                        </p>
+                        <p class="email">
+                            <input name="email" type="email" required class="feedback-input" id="email" placeholder="Email" />
+                        </p>
+                        <p class="text">
+                            <textarea name="message" class="feedback-input" id="comment" placeholder="Message"></textarea>
+                        </p>
+                        <div class="submit">
+                            <button type="submit" class="button-blue">SUBMIT</button>
+                            <div class="ease"></div>
+                        </div>
+<br><br>
+<center>
+<a HREF="home.html"
+ onMouseOver="if(browserOK){document.banner21.src=im21on.src}  
+"onMouseOut="if(browserOK){document.banner21.src=im21off.src}">
+<img src="images/home2.jpg" name="banner21" border=0></a>
+</center>
 
-        <input type="submit" value="Send Message">
-    </form>
-	<center>
-		<br>
-				<table border="0" width="20%" cellspacing="0" cellpadding="0">
-						<tr><td colspan="3" align="center" valign="top" bgcolor="#fdfadb"> 
-				<A HREF="video.html"><font size="2" COLOR="#0000CD" FACE="verdana, arial, helvetica, sans serif"><b>video</b></FONT></A> |
-				<A HREF="faces.html"><font size="2" COLOR="#0000CD" FACE="verdana, arial, helvetica, sans serif"><b>Faces</b></FONT></A> |
-		              <A HREF="main page 2g.html"><font size="2" COLOR="#0000CD" FACE="verdana, arial, helvetica, sans serif"><b>Home</b></FONT></A> |
-				<A HREF="photos.html"><font size="2" COLOR="#0000CD" FACE="verdana, arial, helvetica, sans serif"><b>photos</b></FONT></A></table>
-			</center>
-		</body>
-		</html>
-	</center>
-</body>
+                    </form>
+                    <div id="error_message" style="width:100%; height:100%; display:none; ">
+                        <h4>
+                            Error
+                        </h4>
+                        Sorry there was an error sending your form. 
+                    </div>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h2>Success! Your Message was Sent Successfully.
+<p>
+<A HREF="home.html"><font size="6" COLOR=“#ffffff” FACE="verdana, arial, helvetica, sans serif">This way back to Home Page</FONT></A>
+</h2> </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
-
-
